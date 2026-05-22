@@ -1041,11 +1041,15 @@ body{
 
         max-width: 320px;
 
-        min-height: 420px;
-
-        height: auto;
+        height: 420px;
 
         margin: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
 
     }
 
