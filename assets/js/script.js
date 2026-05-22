@@ -54,13 +54,21 @@ function initSwiper(){
 
         swiper = new Swiper(".servicesSwiper", {
 
-            slidesPerView: 1.1,
+            slidesPerView: 1.05,
 
-            spaceBetween: 20,
+            spaceBetween: 16,
 
             centeredSlides: true,
 
-            loop: true,
+            loop: false,
+
+            speed: 500,
+
+            grabCursor: true,
+
+            touchRatio: 1.2,
+
+            touchReleaseOnEdges: true,
 
             pagination: {
 
