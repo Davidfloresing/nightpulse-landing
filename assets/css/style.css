@@ -1013,6 +1013,20 @@ body{
 
     }
 
+    /* MOBILE SERVICES */
+
+    @media (max-width: 991px){
+
+        .service-card{
+
+            max-width: 320px;
+
+            margin: auto;
+
+        }
+
+    }
+
 }
 
 /* ========================= */
