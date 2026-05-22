@@ -40,3 +40,41 @@ window.addEventListener("load", () => {
     }, 500);
 
 });
+
+/* ========================= */
+/* SERVICES SWIPER */
+/* ========================= */
+
+const swiper = new Swiper(".servicesSwiper", {
+
+    slidesPerView: 1.1,
+
+    spaceBetween: 20,
+
+    centeredSlides: true,
+
+    loop: true,
+
+    pagination: {
+
+        el: ".swiper-pagination",
+
+        clickable: true,
+
+    },
+
+    breakpoints: {
+
+        992: {
+
+            slidesPerView: 3,
+
+            centeredSlides: false,
+
+            loop: false,
+
+        }
+
+    }
+
+});

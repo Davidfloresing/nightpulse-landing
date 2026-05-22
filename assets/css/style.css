@@ -1014,3 +1014,29 @@ body{
     }
 
 }
+
+/* ========================= */
+/* SWIPER SERVICES */
+/* ========================= */
+
+.servicesSwiper{
+
+    overflow: hidden;
+
+}
+
+.swiper-slide{
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.swiper-pagination{
+
+    margin-top: 30px;
+
+    position: relative;
+
+}
