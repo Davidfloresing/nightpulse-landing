@@ -41,40 +41,39 @@ window.addEventListener("load", () => {
 
 });
 
+
 /* ========================= */
 /* SERVICES SWIPER */
 /* ========================= */
 
-const swiper = new Swiper(".servicesSwiper", {
+let swiper;
 
-    slidesPerView: 1.1,
+function initSwiper(){
 
-    spaceBetween: 20,
+    if(window.innerWidth <= 991){
 
-    centeredSlides: true,
+        swiper = new Swiper(".servicesSwiper", {
 
-    loop: true,
+            slidesPerView: 1.1,
 
-    pagination: {
+            spaceBetween: 20,
 
-        el: ".swiper-pagination",
+            centeredSlides: true,
 
-        clickable: true,
+            loop: true,
 
-    },
+            pagination: {
 
-    breakpoints: {
+                el: ".swiper-pagination",
 
-        992: {
+                clickable: true,
 
-            slidesPerView: 3,
+            },
 
-            centeredSlides: false,
-
-            loop: false,
-
-        }
+        });
 
     }
 
-});
+}
+
+initSwiper();

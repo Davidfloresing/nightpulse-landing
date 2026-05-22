@@ -535,22 +535,6 @@ body{
 
 }
 
-/* WRAPPER */
-
-.cards-wrapper{
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 20px;
-
-    position: relative;
-
-}
-
 /* CARD BASE */
 
 .service-card{
@@ -608,12 +592,6 @@ body{
     z-index: -1;
 
     transition: 0.4s ease;
-
-}
-
-.service-card:hover::before{
-
-    background: rgba(255,255,255,0.08);
 
 }
 
@@ -694,25 +672,11 @@ body{
 
     transform: translateY(-20px);
 
-    z-index: 20;
-
     border-color: rgba(255,255,255,0.15);
 
     box-shadow:
         0 0 30px rgba(255,255,255,0.06),
         0 0 80px rgba(255,255,255,0.03);
-
-}
-
-.cards-wrapper:hover .service-card{
-
-    opacity: 0.4;
-
-}
-
-.cards-wrapper .service-card:hover{
-
-    opacity: 1;
 
 }
 
@@ -799,6 +763,90 @@ body{
 }
 
 /* ========================= */
+/* SWIPER SERVICES */
+/* ========================= */
+
+.servicesSwiper{
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding-bottom: 50px;
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px){
+
+    .swiper-wrapper{
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 20px;
+
+    }
+
+}
+
+/* SLIDES */
+
+.swiper-slide{
+
+    display: flex;
+
+    justify-content: center;
+
+    opacity: 0.5;
+
+    transition: 0.4s ease;
+
+}
+
+.swiper-slide-active{
+
+    opacity: 1;
+
+}
+
+/* PAGINATION */
+
+.swiper-pagination{
+
+    position: relative;
+
+    margin-top: 25px;
+
+}
+
+.swiper-pagination-bullet{
+
+    background: rgba(255,255,255,0.35);
+
+    opacity: 1;
+
+    width: 10px;
+
+    height: 10px;
+
+    transition: 0.3s ease;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    background: white;
+
+    width: 28px;
+
+    border-radius: 20px;
+
+}
+
+/* ========================= */
 /* RESPONSIVE */
 /* ========================= */
 
@@ -820,10 +868,9 @@ body{
 
     }
 
-
     .navbar-nav{
 
-        gap: 0px;
+        gap: 0;
 
     }
 
@@ -834,6 +881,12 @@ body{
         font-size: 0.95rem;
 
         padding: 12px 0;
+
+    }
+
+    .nav-link::after{
+
+        display: none;
 
     }
 
@@ -855,7 +908,7 @@ body{
 
     .hero{
 
-        min-height: 125vh;
+        min-height: 115vh;
 
         padding-top: 120px;
 
@@ -863,23 +916,11 @@ body{
 
         align-items: flex-start;
 
-        overflow: hidden;
-
-        background-size: cover;
-
-        background-position: center;
-
     }
 
-   .hero-content{
-
-        display: flex;
+    .hero-content{
 
         flex-direction: column;
-
-        align-items: center;
-
-        justify-content: flex-start;
 
         text-align: center;
 
@@ -898,6 +939,13 @@ body{
         align-items: center;
 
         margin-top: -40px;
+
+    }
+
+    .hero-title span{
+
+        font-size: 2.8rem;
+
     }
 
     .hero-text p{
@@ -908,13 +956,9 @@ body{
 
     .hero-buttons{
 
-        display: flex;
-
         justify-content: center;
 
-        align-items: center;
-
-        flex-direction: row;
+        flex-wrap: wrap;
 
         gap: 12px;
 
@@ -937,12 +981,6 @@ body{
 
     }
 
-    .hero-text h1{
-
-        font-size: 2.8rem;
-
-    }
-
     /* SLIDER */
 
     .hero-slider{
@@ -957,7 +995,7 @@ body{
 
         margin: auto;
 
-        margin-top: 130px;
+        margin-top: 80px;
 
     }
 
@@ -971,19 +1009,15 @@ body{
 
     /* SERVICES */
 
-    .cards-wrapper{
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 30px;
-
-    }
-
     .section-title h2{
 
         font-size: 2.2rem;
+
+    }
+
+    .servicesSwiper{
+
+        overflow: visible;
 
     }
 
@@ -997,60 +1031,8 @@ body{
 
         height: auto;
 
-    }
-
-    /* REMOVE LINE EFFECT MOBILE */
-
-    .nav-link::after{
-
-        display: none;
+        margin: auto;
 
     }
-
-    .hero-title span{
-
-        font-size: 2.8rem;
-
-    }
-
-    /* MOBILE SERVICES */
-
-    @media (max-width: 991px){
-
-        .service-card{
-
-            max-width: 320px;
-
-            margin: auto;
-
-        }
-
-    }
-
-}
-
-/* ========================= */
-/* SWIPER SERVICES */
-/* ========================= */
-
-.servicesSwiper{
-
-    overflow: hidden;
-
-}
-
-.swiper-slide{
-
-    display: flex;
-
-    justify-content: center;
-
-}
-
-.swiper-pagination{
-
-    margin-top: 30px;
-
-    position: relative;
 
 }
