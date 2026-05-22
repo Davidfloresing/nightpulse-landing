@@ -84,4 +84,14 @@ function initSwiper(){
 
 }
 
-initSwiper();
+/* ONLY MOBILE */
+
+window.addEventListener("load", () => {
+
+    if(window.innerWidth <= 991){
+
+        initSwiper();
+
+    }
+
+});

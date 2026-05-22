@@ -780,6 +780,12 @@ body{
 
 @media (min-width: 992px){
 
+    .servicesSwiper{
+
+        overflow: visible;
+
+    }
+
     .swiper-wrapper{
 
         display: flex;
@@ -787,6 +793,14 @@ body{
         justify-content: center;
 
         gap: 20px;
+
+    }
+
+    .swiper-slide{
+
+        width: auto !important;
+
+        opacity: 1;
 
     }
 
@@ -1032,6 +1046,44 @@ body{
         height: auto;
 
         margin: auto;
+
+    }
+
+    /* MOBILE PERFORMANCE */
+
+    .service-card{
+
+        backdrop-filter: blur(8px);
+
+        transition: opacity 0.3s ease;
+
+    }
+
+    /* REMOVE HEAVY EFFECTS */
+
+    .service-card::before,
+    .service-card::after,
+    .card-glow{
+
+        display: none;
+
+    }
+
+    /* REMOVE HOVER MOBILE */
+
+    .service-card:hover{
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+    /* SMOOTHER SWIPE */
+
+    .swiper-slide{
+
+        transition: opacity 0.2s ease;
 
     }
 
