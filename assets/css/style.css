@@ -1178,7 +1178,7 @@ body{
 
     position: relative;
 
-    width: 420px;
+    width: 380px;
 
     height: 520px;
 
@@ -1221,5 +1221,11 @@ body{
         height: 340px;
 
     }
+
+}
+
+.eventsSwiper .swiper-wrapper{
+
+    transition-timing-function: linear !important;
 
 }

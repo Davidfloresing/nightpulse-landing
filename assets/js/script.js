@@ -106,11 +106,11 @@ const eventsSwiper = new Swiper(".eventsSwiper", {
 
     spaceBetween: 25,
 
+    centeredSlides: false,
+
     loop: true,
 
-    speed: 5000,
-
-    freeMode: true,
+    speed: 3500,
 
     grabCursor: true,
 
@@ -118,9 +118,11 @@ const eventsSwiper = new Swiper(".eventsSwiper", {
 
     autoplay: {
 
-        delay: 0,
+        delay: 1,
 
         disableOnInteraction: false,
+
+        pauseOnMouseEnter: true,
 
     },
 
