@@ -484,9 +484,9 @@ body{
 
     40%{
 
-        opacity: 0.65;
+        opacity: 0.82;
 
-        filter: blur(8px);
+        filter: blur(2px);
 
     }
 
