@@ -478,19 +478,15 @@ body{
 
         opacity: 1;
 
-        transform: translateY(0);
-
         filter: blur(0);
 
     }
 
-    30%{
+    40%{
 
-        opacity: 0.45;
+        opacity: 0.2;
 
-        transform: translateY(-12px);
-
-        filter: blur(6px);
+        filter: blur(8px);
 
     }
 
@@ -498,14 +494,11 @@ body{
 
         opacity: 1;
 
-        transform: translateY(0);
-
         filter: blur(0);
 
     }
 
 }
-
 /* ========================= */
 /* SERVICES */
 /* ========================= */
