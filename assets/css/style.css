@@ -831,7 +831,7 @@ body{
 
     }
 
-    .swiper-wrapper{
+    .servicesSwiper .swiper-wrapper{
 
         display: flex;
 
@@ -841,7 +841,7 @@ body{
 
     }
 
-    .swiper-slide{
+    .servicesSwiper .swiper-slide{
 
         width: auto !important;
 
@@ -853,7 +853,9 @@ body{
 
 /* SLIDES */
 
-.swiper-slide{
+/* SERVICES SLIDES */
+
+.servicesSwiper .swiper-slide{
 
     display: flex;
 
@@ -865,7 +867,7 @@ body{
 
 }
 
-.swiper-slide-active{
+.servicesSwiper .swiper-slide-active{
 
     opacity: 1;
 
@@ -1178,7 +1180,7 @@ body{
 
     position: relative;
 
-    width: 380px;
+    width: 360px;
 
     height: 520px;
 
@@ -1219,5 +1221,27 @@ body{
 .eventsSwiper .swiper-wrapper{
 
     transition-timing-function: linear !important;
+
+}
+
+/* EVENTS PERFORMANCE */
+
+.eventsSwiper .swiper-slide{
+
+    opacity: 1 !important;
+
+    transition: none !important;
+
+}
+
+.eventsSwiper{
+
+    pointer-events: none;
+
+}
+
+.event-card{
+
+    pointer-events: auto;
 
 }

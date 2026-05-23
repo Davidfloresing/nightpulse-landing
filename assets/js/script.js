@@ -110,7 +110,7 @@ const eventsSwiper = new Swiper(".eventsSwiper", {
 
     loop: true,
 
-    speed: 3500,
+    speed: 8000,
 
     grabCursor: true,
 
@@ -122,7 +122,6 @@ const eventsSwiper = new Swiper(".eventsSwiper", {
 
         disableOnInteraction: false,
 
-        pauseOnMouseEnter: true,
 
     },
 
