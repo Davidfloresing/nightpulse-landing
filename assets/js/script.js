@@ -112,9 +112,7 @@ const eventsSwiper = new Swiper(".eventsSwiper", {
 
     speed: 8000,
 
-    grabCursor: true,
-
-    allowTouchMove: true,
+    allowTouchMove: false,
 
     autoplay: {
 

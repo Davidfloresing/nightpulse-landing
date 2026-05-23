@@ -1261,15 +1261,3 @@ body{
     transition: none !important;
 
 }
-
-.eventsSwiper{
-
-    pointer-events: none;
-
-}
-
-.event-card{
-
-    pointer-events: auto;
-
-}
