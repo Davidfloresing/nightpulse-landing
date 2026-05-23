@@ -1135,6 +1135,20 @@ body{
 
     }
 
+    /* MOBILE SECTIONS */
+
+    .services{
+
+        padding: 90px 0 110px;
+
+    }
+
+    .events{
+
+        padding: 90px 0 110px;
+
+    }
+
 }
 
 /* ========================= */
