@@ -26,28 +26,6 @@ setInterval(changeSlide, 3000);
 
 
 /* ========================= */
-/* HERO CINEMATIC TITLE */
-/* ========================= */
-
-window.addEventListener("load", () => {
-
-    const titleSpans = document.querySelectorAll(".hero-title span");
-
-    setTimeout(() => {
-
-        titleSpans.forEach((span, index) => {
-
-            span.style.animation =
-            `cinematicReveal 1.8s ease ${index * 0.25}s forwards`;
-
-        });
-
-    }, 1200);
-
-});
-
-
-/* ========================= */
 /* SERVICES SWIPER */
 /* ========================= */
 
