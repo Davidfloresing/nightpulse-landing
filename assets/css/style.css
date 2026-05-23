@@ -217,6 +217,34 @@ body{
 
 }
 
+/* HERO FADE BOTTOM */
+
+.hero::after{
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 180px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(5,5,5,0) 0%,
+        #050505 100%
+    );
+
+    z-index: 2;
+
+    pointer-events: none;
+
+}
+
 /* HERO CONTENT */
 
 .hero-content{
