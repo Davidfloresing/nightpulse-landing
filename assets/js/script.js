@@ -95,3 +95,49 @@ window.addEventListener("load", () => {
     }
 
 });
+
+/* ========================= */
+/* EVENTS SWIPER */
+/* ========================= */
+
+const eventsSwiper = new Swiper(".eventsSwiper", {
+
+    slidesPerView: "auto",
+
+    spaceBetween: 25,
+
+    loop: true,
+
+    speed: 5000,
+
+    freeMode: true,
+
+    grabCursor: true,
+
+    allowTouchMove: true,
+
+    autoplay: {
+
+        delay: 0,
+
+        disableOnInteraction: false,
+
+    },
+
+    breakpoints: {
+
+        0: {
+
+            spaceBetween: 15,
+
+        },
+
+        992: {
+
+            spaceBetween: 25,
+
+        }
+
+    }
+
+});

@@ -1152,39 +1152,23 @@ body{
 
 }
 
-/* MARQUEE */
+/* SWIPER */
 
-.events-marquee{
+.eventsSwiper{
 
     width: 100%;
 
-    overflow: hidden;
-
-    position: relative;
+    overflow: visible;
 
     margin-top: 80px;
 
 }
 
-/* TRACK */
+/* SLIDES */
 
-.marquee-track{
+.eventsSwiper .swiper-slide{
 
-    display: flex;
-
-    width: max-content;
-
-    animation: marquee 30s linear infinite;
-
-    gap: 25px;
-
-}
-
-/* PAUSE ON HOVER */
-
-.events-marquee:hover .marquee-track{
-
-    animation-play-state: paused;
+    width: auto;
 
 }
 
@@ -1201,8 +1185,6 @@ body{
     overflow: hidden;
 
     border-radius: 30px;
-
-    flex-shrink: 0;
 
 }
 
@@ -1228,72 +1210,7 @@ body{
 
 }
 
-/* SIDE FADE */
-
-.events-marquee::before,
-.events-marquee::after{
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-
-    width: 120px;
-
-    height: 100%;
-
-    z-index: 2;
-
-    pointer-events: none;
-
-}
-
-.events-marquee::before{
-
-    left: 0;
-
-    background: linear-gradient(
-        to right,
-        #050505,
-        transparent
-    );
-
-}
-
-.events-marquee::after{
-
-    right: 0;
-
-    background: linear-gradient(
-        to left,
-        #050505,
-        transparent
-    );
-
-}
-
-/* ANIMATION */
-
-@keyframes marquee{
-
-    from{
-
-        transform: translateX(0);
-
-    }
-
-    to{
-
-        transform: translateX(-50%);
-
-    }
-
-}
-
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
 
 @media (max-width: 991px){
 
@@ -1302,14 +1219,6 @@ body{
         width: 260px;
 
         height: 340px;
-
-    }
-
-    .marquee-track{
-
-        gap: 15px;
-
-        animation-duration: 20s;
 
     }
 
