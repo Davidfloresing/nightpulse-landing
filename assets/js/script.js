@@ -26,18 +26,23 @@ setInterval(changeSlide, 3000);
 
 
 /* ========================= */
-/* HERO TITLE ANIMATION */
+/* HERO CINEMATIC TITLE */
 /* ========================= */
 
 window.addEventListener("load", () => {
 
-    const heroTitle = document.querySelector(".hero-title");
+    const titleSpans = document.querySelectorAll(".hero-title span");
 
     setTimeout(() => {
 
-        heroTitle.classList.add("animate");
+        titleSpans.forEach((span, index) => {
 
-    }, 500);
+            span.style.animation =
+            `cinematicReveal 1.8s ease ${index * 0.25}s forwards`;
+
+        });
+
+    }, 1200);
 
 });
 
